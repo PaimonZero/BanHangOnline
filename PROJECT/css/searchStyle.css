@@ -373,12 +373,17 @@ select {
 }
 
 .dot {
-    height: 2px;
-    width: 100px;
+    height: 5px;
+    width: 5%;
     margin: 0 2px;
     background-color: #bbb;
     display: inline-block;
     transition: background-color 0.6s ease;
+    cursor: pointer;
+}
+
+.active-dot {
+    background-color: red; /* Color for the active dot */
 }
 
 .prev,
@@ -408,7 +413,6 @@ select {
     background-color: #f1f1f1;
     color: black;
 }
-
 .content-right img {
     width: 100%;
     height: 180px;
@@ -684,6 +688,7 @@ select {
 .product-img {
     display: flex;
     width: 60%;
+    height: 175px;
     margin: 0 auto;
 }
 .product-card {
@@ -695,7 +700,7 @@ select {
     background-repeat: no-repeat;
     background-position: center center;
     border-radius: 5px;
-    padding-top: 50px;
+    padding-top: 48px;
 }
 .product-card h6{
     position: absolute; 
@@ -744,7 +749,22 @@ select {
 .more-content h6{
     text-align: justify;
     margin: 20px 7.5%;
-    line-height: 1.5;
+    line-height: 1.8;
+}
+.more-content ul li{
+    list-style:circle;
+}
+.more-content1{
+    display: none;
+}
+.show-more-btn1 {
+    color: grey;
+    cursor: pointer;
+    margin-left: 40%;
+    padding: 10px 30px;
+    box-shadow: 0 0 5px rgba(0, 0, 0);
+    background-color: #ddd;
+    border-radius: 5px;
 }
 .show-more-btn {
     color: grey;
@@ -894,21 +914,6 @@ a.mail:hover {
 	color: #bdd001;
 	text-decoration: underline;
 }
-::-webkit-input-placeholder {
-	color:#fff !important;
-}
-:-moz-placeholder { /* Firefox 18- */
-	color:#fff !important;
-}
-::-moz-placeholder {  /* Firefox 19+ */
-	color:#fff !important;
-}
-:-ms-input-placeholder {  
-	color:#fff !important;
-}
-/*-- //Copyright --*/
-/*-- //Footer --*/  
-/*-- slider-up-arrow --*/
 #toTop {
 	display: none;
 	text-decoration: none;
@@ -938,4 +943,25 @@ a.mail:hover {
 .social-button {
     display: inline-block;
     transition: transform 0.3s;
+}
+/* lọc theo title */
+.filter1 img {
+    display: flex;
+    margin: 0 auto;
+}
+.filter1 h6{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.filter1 h5{
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.filter1{
+    box-shadow: 0 0 1px black;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    margin-right: 2%;
+    padding: 10px;
 }
