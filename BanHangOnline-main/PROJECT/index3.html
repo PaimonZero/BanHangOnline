@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    
+<!-- Mirrored from coderthemes.com/hyper/saas/apps-ecommerce-products-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Dec 2023 13:30:02 GMT -->
+<head>
+        <meta charset="utf-8" />
+        <title>Product Details | Hyper - Responsive Bootstrap 5 Admin Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- Theme Config Js -->
+        <script src="js/hyper-config.js"></script>
+
+        <!-- App css -->
+        <link href="css/app-saas.min.css" rel="stylesheet" type="text/css" id="app-style"/>
+
+        <!-- Icons css -->
+        <link href="css/icons.min.css" rel="stylesheet" type="text/css"/>
+
+        <link href="css/styleindex3.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header class="position-fixed w-100 bg-light hight--header d-flex flex-column">
+            <div class="bannerTopHead container-fluid d-none d-lg-block">
+              <div class="row">
+                <div class="col-md-4">
+                  <img class="imgTopHead" src="https://cdn2.cellphones.com.vn/x/https://dashboard.cellphones.com.vn/storage/207x30_TopBanner_Homepage_01.2024_Mb_2-01133.svg" alt="Top Banner Mobile dịch vụ bảo hành">
+                </div>
+                <div class="col-md-4">
+                  <img class="imgTopHead" src="https://cdn2.cellphones.com.vn/x/https://dashboard.cellphones.com.vn/storage/207x30_TopBanner_Homepage_01.2024_Mb_2-02133.svg" alt="TOP banner mobile giao nhanh miễn phí">
+                </div>
+                <div class="col-md-4">
+                  <img class="imgTopHead" src="https://cdn2.cellphones.com.vn/x/https://dashboard.cellphones.com.vn/storage/207x30_TopBanner_Homepage_01.2024_Mb_2-03133.svg" alt="TOP banner mobile sản phẩm chính hãng đầy đủ VAT">
+                </div>
+              </div>
+            </div>
+            
+            <div id="carouselExampleControls" class="carousel slide d-block d-lg-none" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="w-100">
+                    <img class="imgTopHead w-100" src="https://cdn2.cellphones.com.vn/x/https://dashboard.cellphones.com.vn/storage/207x30_TopBanner_Homepage_01.2024_Mb_2-01133.svg" alt="Top Banner Mobile dịch vụ bảo hành">
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <div class="w-100">
+                    <img class="imgTopHead w-100" src="https://cdn2.cellphones.com.vn/x/https://dashboard.cellphones.com.vn/storage/207x30_TopBanner_Homepage_01.2024_Mb_2-02133.svg" alt="TOP banner mobile giao nhanh miễn phí">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="w-100">
+                    <img class="imgTopHead w-100" src="https://cdn2.cellphones.com.vn/x/https://dashboard.cellphones.com.vn/storage/207x30_TopBanner_Homepage_01.2024_Mb_2-03133.svg" alt="TOP banner mobile sản phẩm chính hãng đầy đủ VAT">
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          
+          
+          <!-- Nav-bar -->
+            <nav class="navbar align-items-center border-bottom flex-grow-1">
+              <div class="container-fluid">
+                  <div class="d-flex align-items-center ">
+                      <a href="#" class="navbar-brand m-0 textColor fw-bold brand pacifico-regular">HexTech</a>
+                      <div id="verticalbar" class="mx-xxl-2 mx-1 d-none d-lg-inline-block"></div>
+                      <a href="#" class="nav-link textColor fw-lighter lh-sm brandSubHeading d-none d-lg-inline-block pacifico-regular">Công Nghệ
+                          <br>
+                          <span class="fw-medium brandSubHeading d-none d-lg-inline-block pacifico-regular">Thay Đổi Cuộc Sống</span>
+                      </a>
+                      <div class="position-relative ms-4 d-none d-xl-inline-block">
+                          <input class="searchInput bg-body-tertiary iconCursor ps-md-5 p-1 p-md-2 " type="search"
+                              placeholder="Search Rides" aria-label="Search">
+                          <img class="position-absolute searchImg iconCursor" src="./png/search.svg"
+                              alt="search">
+                      </div>
+          
+                  </div>
+                  <div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0">
+                      <div class="d-none d-lg-block">
+                          <ul class="d-flex m-0 list-unstyled ">
+                              <li class="nav-item iconChange  me-4 pt-2">
+                                  <a href="#" class="nav-link text-center  p-0">
+                                      <div class=" d-flex align-items-center overflow-hidden changeWidth mx-auto">
+                                          <img class="one iconHeight mx-2" src="images/svg/telephone.png" alt="book">
+                                          <img class="two iconHeight mx-2" src="images/svg/telephone-tran.png"
+                                              alt="book-half">
+                                      </div>
+                                      <div class="smallFont textColor">Gọi điện</div>
+                                  </a>
+                              </li>
+                              <li class="nav-item iconChange   me-4 pt-2">
+                                  <a href="#" class="nav-link text-center p-0">
+                                      <div class=" d-flex align-items-center overflow-hidden changeWidth mx-auto">
+                                          <img class="iconHeight mx-2" src="images/svg/placeholder.png" alt="dpad">
+                                          <img class=" iconHeight mx-2" src="images/svg/placehoder-tran.png" alt="dpad">
+                                      </div>
+                                      <div class="smallFont textColor">Địa chỉ</div>
+                                  </a>
+                              </li>
+                              <li class="nav-item iconChange  me-4 pt-1">
+                                  <a href="#" class="nav-link text-center p-0">
+                                      <div class=" d-flex align-items-center overflow-hidden changeWidth mx-auto">
+                                          <img class="iconHeight--delivery mx-2" src="images/svg/delivery-car.png"
+                                              alt="bar-chart">
+                                          <img class=" iconHeight--delivery mx-2" src="images/svg/delivery-car-tran.png"
+                                              alt="bar-chart">
+                                      </div>
+                                      <div class="smallFont textColor">Đơn hàng</div>
+                                  </a>
+                              </li>
+                              <li class="nav-item iconChange  me-4 pt-2">
+                                  <a href="#" class="nav-link text-center p-0">
+                                      <div class=" d-flex align-items-center overflow-hidden changeWidth mx-auto">
+                                          <img class="iconHeight mx-2" src="images/svg/hand-bag.png"
+                                              alt="lightbulb">
+                                          <img class=" iconHeight mx-2" src="images/svg/hand-bag-tran.png"
+                                              alt="lightbulb">
+                                      </div>
+                                      <div class="smallFont textColor">Giỏ hàng</div>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+        
+                      <div id="iconContainer" class="d-flex flex-grow-1 justify-content-end justify-content-lg-center align-items-center rounded-5 bg-light d-xl-none">
+                        <div class="search-box">
+                          <input type="text" class="search-input" placeholder="Sản phẩm,..." />
+                          <button class="search-btn">
+                            <i class="fas fa-search"></i>
+                          </button>
+                        </div>
+                      </div>
+                      
+                      <button id="loginBtn" class="btn btn-sm m-sm-2 m-1 bg-primary text-white rounded-5 px-sm-3 px-2">Login
+                          <img class="d-none d-lg-inline-block" src="./png/box-arrow-in-right.svg"
+                              alt="box-arrow">
+                      </button>
+                  </div>
+              </div>
+          </nav>
+          <nav id="secondNav" class="bottom-0 position-fixed end-0 start-0">
+              <div class="d-lg-none">
+                  <div class="container-fluid d-flex justify-content-between shadow pt-2">
+                      <a href="#" class="text-center text-decoration-none textColor">
+                          <img class="iconHeight mb-1" src="images/svg/logo.png" alt="book">
+                          <div class="extraSmallFont active pb-1 pacifico-regular">HexTech</div>
+                      </a>
+                      <a href="#" class="text-decoration-none textColor  text-center">
+                          <img class="iconHeight mb-1" src="images/svg/telephone.png" alt="book">
+                          <div class="extraSmallFont pb-1">Gọi điện</div>
+                      </a>
+                      <a href="#" class="text-decoration-none textColor  text-center">
+                          <img class="iconHeight mb-1" src="images/svg/placeholder.png" alt="dpad">
+                          <div class="extraSmallFont pb-1">Địa chỉ</div>
+                      </a>
+                      <a href="#" class="text-decoration-none textColor  text-center">
+                          <img class="iconHeight mb-1" src="images/svg/delivery-car.png" alt="bar-chart">
+                          <div class="extraSmallFont pb-1">Đơn hàng</div>
+                      </a>
+                      <a href="#" class="text-decoration-none textColor  text-center">
+                          <img class="iconHeight mb-1" src="images/svg/hand-bag.png" alt="lightbulb">
+                          <div class="extraSmallFont pb-1">Giỏ hàng</div>
+                      </a>
+                      <a href="#" class="text-decoration-none textColor  text-center">
+                          <img class="iconHeight mb-1" src="images/svg/menu.png" alt="briefcase">
+                          <div class="extraSmallFont pb-1">Danh mục</div>
+                      </a>
+                  </div>
+              </div>
+          </nav>
+          </header>
+
+            <div class="container">
+                <div class="content" style="padding: 0 .75rem var(--ct-footer-height); padding-top: var(--header-height, 100px); ">
+
+                    <!-- Start Content-->
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-lg-5">
+                                                <!-- Product image -->
+                                                <a href="javascript: void(0);" class="text-center d-block mb-4">
+                                                    <img src="images/ss-s24-ultra-xam-222.webp" class="img-fluid mainImg" style="max-width: 280px;" alt="Product-img" />
+                                                </a>
+
+                                                <div class="d-lg-flex d-none justify-content-center">
+                                                    <a href="javascript: void(0);" class="ms-2">
+                                                        <img src="images/ss-s24-ultra-xam-222.webp" class="img-fluid img-thumbnail p-2 thumbnail" style="max-width: 90px;" alt="Product-img" />
+                                                    </a>
+                                                    <a href="javascript: void(0);" class="ms-2">
+                                                        <img src="images/ss-s24-ultra-den-222.webp" class="img-fluid img-thumbnail p-2 thumbnail" style="max-width: 90px;" alt="Product-img" />
+                                                    </a>
+                                                    <a href="javascript: void(0);" class="ms-2">
+                                                        <img src="images/ss-s24-ultra-vang-222.webp" class="img-fluid img-thumbnail p-2 thumbnail" style="max-width: 90px;" alt="Product-img" />
+                                                    </a>
+                                                    <a href="javascript: void(0);" class="ms-2">
+                                                        <img src="images/ss-s24-ultra-xanh-222.webp" class="img-fluid img-thumbnail p-2 thumbnail" style="max-width: 90px;" alt="Product-img" />
+                                                    </a>
+                                                </div>
+                                            </div> <!-- end col -->
+                                            
+                                            <div class="col-lg-7">
+                                                <form class="ps-lg-4">
+                                                    <!-- Product title -->
+                                                    <h3 class="mt-0">Samsung Galaxy S24 Ultra<a href="javascript: void(0);" class="text-muted"><i class="mdi mdi-square-edit-outline ms-2"></i></a> </h3>
+                                                    <p class="font-16">
+                                                        <span class="text-warning mdi mdi-star"></span>
+                                                        <span class="text-warning mdi mdi-star"></span>
+                                                        <span class="text-warning mdi mdi-star"></span>
+                                                        <span class="text-warning mdi mdi-star"></span>
+                                                        <span class="text-warning mdi mdi-star"></span>
+                                                    </p>
+
+                                                    <!-- Product stock -->
+                                                    <div class="mt-3">
+                                                        <h4><span class="badge badge-success-lighten">Còn hàng</span></h4>
+                                                    </div>
+
+                                                    <!-- Product description -->
+                                                    <div class="mt-4">
+                                                        <h6>Giá:</h6>
+                                                        <h3 style="color: red;"> 28.990.000₫</h3>
+                                                        <h4><del>33.990.000₫</del></h4>
+                                                    </div>
+
+                                                    <!-- Quantity -->
+                                                    <div class="mt-4">
+                                                        <h6 class="font-14">Số lượng</h6>
+                                                        <div class="d-flex">
+                                                            <input type="number" min="1" value="1" class="form-control" placeholder="Qty" style="width: 90px;">
+                                                            <button type="button" class="btn btn-danger ms-2"><i class="mdi mdi-cart me-1"></i> Thêm vào giỏ hàng</button>
+                                                        </div>
+                                                    </div>
+                                        
+                                                    <!-- Product description -->
+                                                    <div class="mt-4">
+                                                        <h6 class="font-14">Description:</h6>
+                                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <div class="col-lg-5">
+                                                <div class="d-lg-flex d-none justify-content-center">
+                                                    <!-- Product image -->
+                                                    <div class="box-details">
+                                                        <ul>
+                                                            <li data-info="Màn hình">
+                                                                <i class="fa-solid fa-mobile"></i>
+                                                                <p>6.8 inch, QHD+, Dynamic AMOLED 2X, 3120 x 1440 Pixels</p>
+                                                            </li>
+                                                            <li>
+                                                                <span></span>
+                                                            </li>
+                                                            <li>
+                                                                <span></span>
+                                                            </li>
+                                                            <li>
+                                                                <span></span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end col -->
+
+                                            <div class="col-lg-7">
+                                                <form class="ps-lg-4">  
+                                                    <!-- Product information -->
+                                                    <div class="mt-4">
+                                                        <div class="row" style="">
+                                                            <div class="col-md-4">
+                                                                <h6 class="font-14">Số lượng trong kho:</h6>
+                                                                <p class="text-sm lh-150">74</p>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <h6 class="font-14">Số lượng đơn đặt hàng:</h6>
+                                                                <p class="text-sm lh-150">258</p>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <h6 class="font-14">Doanh thu:</h6>
+                                                                <p class="text-sm lh-150">7,479,420,000₫</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </form>
+                                            </div> <!-- end col -->
+                                        </div> <!-- end row-->
+
+                                        <div class="table-responsive mt-4">
+                                            <table class="table table-bordered table-centered mb-0">
+                                                <thead class="table-light">
+                                                    <tr>
+                                                        <th>Outlets</th>
+                                                        <th>Price</th>
+                                                        <th>Stock</th>
+                                                        <th>Revenue</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>ASOS Ridley Outlet - NYC</td>
+                                                        <td>$139.58</td>
+                                                        <td>
+                                                            <div class="progress-w-percent mb-0">
+                                                                <span class="progress-value">478 </span>
+                                                                <div class="progress progress-sm">
+                                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 56%;" aria-valuenow="56" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>$1,89,547</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Marco Outlet - SRT</td>
+                                                        <td>$149.99</td>
+                                                        <td>
+                                                            <div class="progress-w-percent mb-0">
+                                                                <span class="progress-value">73 </span>
+                                                                <div class="progress progress-sm">
+                                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 16%;" aria-valuenow="16" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>$87,245</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Chairtest Outlet - HY</td>
+                                                        <td>$135.87</td>
+                                                        <td>
+                                                            <div class="progress-w-percent mb-0">
+                                                                <span class="progress-value">781 </span>
+                                                                <div class="progress progress-sm">
+                                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 72%;" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>$5,87,478</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Nworld Group - India</td>
+                                                        <td>$159.89</td>
+                                                        <td>
+                                                            <div class="progress-w-percent mb-0">
+                                                                <span class="progress-value">815 </span>
+                                                                <div class="progress progress-sm">
+                                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 89%;" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>$55,781</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div> <!-- end table-responsive-->
+                                        
+                                    </div> <!-- end card-body-->
+                                </div> <!-- end card-->
+                            </div> <!-- end col-->
+                        </div>
+                        <!-- end row-->
+                        
+                    </div> <!-- container -->
+
+                </div> <!-- content -->
+
+                <!-- Footer Start -->
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <script>document.write(new Date().getFullYear())</script> © Hyper - Coderthemes.com
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-md-end footer-links d-none d-md-block">
+                                    <a href="javascript: void(0);">About</a>
+                                    <a href="javascript: void(0);">Support</a>
+                                    <a href="javascript: void(0);">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- end Footer -->
+
+            </div>
+
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+        
+
+        <!-- Vendor js -->
+        <script src="javascript/js/vendor.min.js"></script>
+
+        <!-- App js -->
+        <script src="javascript/js/app.min.js"></script>
+
+        <script src="javascript/js/script.js"></script>
+    </body>
+
+<!-- Mirrored from coderthemes.com/hyper/saas/apps-ecommerce-products-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Dec 2023 13:30:02 GMT -->
+</html>
